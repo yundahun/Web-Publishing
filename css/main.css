@@ -1,0 +1,52 @@
+body {
+  /* 기본(공통) 스타일 */
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #6f6f6f;
+  /* 위 속성들은 모두 상속되기에 전체 스타일을 한번에 제어 */
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+}
+
+.inner {
+  max-width: 940px; /* 반응형 = max-width */
+  margin: 0 auto; /* 가로 너비를 가진 블록 가운데 정렬 */
+  position: relative; /* inner 기준 내부를 absolute 배치하기 위해 */
+  /* background-color: palevioletred; */
+}
+
+.header-sub {
+  height: 148px;
+  min-width: 940px;
+  border-bottom: 2px solid red;
+}
+
+.logo {
+width: 133px;
+margin: 0 auto;
+padding: 17px 0 0;
+}
+
+.util {
+  display: flex;
+  position: absolute;
+  top: 17px;
+  right: 0;
+}
+
+.util li {
+  margin-right: 12px;
+  margin-top: 3px;
+}
+.quickbanner {
+  display: flex;
+}
