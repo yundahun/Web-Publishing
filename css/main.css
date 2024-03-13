@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-a{
+a {
   text-decoration: underline;
 }
 
@@ -24,10 +24,9 @@ img {
   /* background-color: palevioletred; */
 }
 
-.header-sub {
+.header-inner {
   height: 148px;
   min-width: 940px;
-  border-bottom: 2px solid red;
 }
 
 .logo {
@@ -47,6 +46,33 @@ padding: 17px 0 0;
   margin-right: 12px;
   margin-top: 3px;
 }
+
 .quickbanner {
   display: flex;
+  position: absolute;
+  top: 17px;
+}
+
+.quickbanner .smenu {
+  position: relative;
+  top: -21px;
+}
+
+.header-sub {
+  border: 1px solid #ba000c;
+  width: 100%;
+}
+
+.gnb {
+  display: flex;
+  position: absolute;
+  bottom: 15px;
+}
+
+.gnb li {
+  width: 156px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
