@@ -63,16 +63,26 @@ padding: 17px 0 0;
   width: 100%;
 }
 
-.gnb {
+.item {
   display: flex;
   position: absolute;
   bottom: 15px;
 }
 
-.gnb li {
+.item li {
   width: 156px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.item .item__contents {
+  background-color: #2c2a29;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  display: none;
+}
+.header-inner .item li:hover .item__contents {
+display: block;
 }
