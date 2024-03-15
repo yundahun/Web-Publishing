@@ -86,10 +86,6 @@ header .full_cover{
   background-color: #6f6f6f;
 }
 
-header .full_cover .menu_nav{
-
-}
-
 header .full_cover .nav_bg{
   background-color: #6f6f6f;
   position: absolute;
@@ -117,9 +113,7 @@ header .full_cover .menu_nav .first_depth .first_depth_under{
   text-align: center;
   
 }
-
-header .full_cover .menu_nav .first_depth .first_depth_under > a{}
-
+  
 header .full_cover .menu_nav .first_depth .second_depth{
   position: absolute;
   top: 100%;
