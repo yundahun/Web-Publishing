@@ -21,96 +21,169 @@
 
 </head>
 <body>
-  <!-- HEADER -->
-  <div class="inner">
-    <!-- HEADER SUB -->
-    <div class="header-inner">
-      <h1 class="logo">
-        <a href="javascript:void(0)">
-          <img src="image/logo_210302.gif" alt="hollys">
-        </a>
-      </h1>
-      <!-- 우상단 -->
-      <ul class="util">
-        <li>
-          <a href="javascript:void(0)">
-            <img src="./image/util_login.gif" alt="login">
-          </a>
-        </li>
-        <li>
-          <a href="javascript:void(0)">
-            <img src="./image/util_join.gif" alt="join">
-          </a>
-        </li>
-        <li>
-          <a href="javascript:void(0)">
-            <img src="./image/util_09.gif" alt="고객센터">
-          </a>
-        </li>
-        <li>
-          <a href="javascript:void(0)">
-            <img src="./image/util_05.gif" alt="English">
-          </a>
-        </li>
-      </ul>
-      <!-- 좌상단 -->
-      <ul class="quickbanner">
-        <li>
-          <a href="javascript:void(0)">
-            <img src="./image/gnb_smenu01.png" alt="창업설명회" class="smenu">
-          </a>
-        </li>
-        <li>
-          <a href="javascript:void(0)">
-            <img src="./image/gnb_smenu04.gif" alt="기업특판">
-          </a>
-        </li> 
-      </ul>
-      <!-- ITEM -->
-      <ul class="item">
-        <li>
-          <a href="javascript:void(0)">
-            <img src="./image/gnb_01.png" alt="menu">
-          </a>
-          <div class="item__contents"></div>
-        </li>
-        <li>
-          <a href="javascript:void(0)">
-            <img src="./image/gnb_02.png" alt="hollysmall">
-          </a>
-          <div class="item__contents"></div>
-        </li>
-        <li>
-          <a href="javascript:void(0)">
-            <img src="./image/gnb_03.png" alt="membership">
-          </a>
-          <div class="item__contents"></div>
-        </li>
-        <li>
-          <a href="javascript:void(0)">
-            <img src="./image/gnb_04.png" alt="hollysnews">
-          </a>
-          <div class="item__contents"></div>
-        </li>
-        <li>
-          <a href="javascript:void(0)">
-            <img src="./image/gnb_05.png" alt="store">
-          </a>
-          <div class="item__contents"></div>
-        </li>
-        <li>
-          <a href="javascript:void(0)">
-            <img src="./image/gnb_06.png" alt="hollysis">
-          </a>
-          <div class="item__contents"></div>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- boder를 위한 div 태그 -->
-  <div class="header-sub"></div>
+  <!-- HEADER (이너 로고 서브메뉴 메인메뉴 전역배지 ) -->
+  <header>
+    <!-- inner -->
+    <div class="inner">
+      <!-- 로고 -->
+      <a href="./index.html" class="logo">
+        <img src="image/logo_210302.gif" alt="logo">
+      </a>
 
-  <!-- inner div 다시 넣기 -->
-  <div class="inner"></div>
-  </body>
+      <!-- 서브 메뉴 (헤더 오른쪽 상단) -->
+      <div class="sub-menu">
+        <!-- 메뉴 아이템 -->
+        <ul class="menu-left">
+          <li>
+            <img src="image/창업설명회.png" alt="창업설명회">
+            <a href="javascript:void(0)" class="red">창업설명회</a>
+          </li>
+          <li>
+            <img src="image/기업특판.png" alt="기업특판">
+            <a href="javascript:void(0)" class="black">기업특판</a>
+          </li>
+        </ul>
+        <ul class="menu-right">
+          <li>
+            <a href="/signin">멤버십 로그인</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">멤버십 가입</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">고객센터</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">English</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 메인 메뉴 -->
+      <!-- <div>
+        <nav class="menu_nav">
+          <div class="item__contents"></div>
+          <ul class="inner">
+            <li>
+              <a href="javascript:void(0)" class="item__name">Menu<span class="item__op">메뉴</span></a>
+              <ul>
+                <li>COFFEE</li>
+                <li>라떼 · 초콜릿 · 티</li>
+                <li>할리치노 · 빙수</li>
+                <li>스무디 · 주스</li>
+                <li>스파클링</li>
+                <li>푸드</li>
+                <li>MD상품</li>
+                <li>MD식품</li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="item__name">HOLLYS Mall</a>
+              <ul>
+                <li>할리스콘</li>
+                <li>할리스카드</li>
+                <li>E-Store</li>
+                <li>구매내역</li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="item__name">Membership</a>
+              <ul>
+                <li>스마트오더</li>
+                <li>멤버십 혜택</li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="item__name">HOLLYS News</a>
+              <ul>
+                <li>Notice</li>
+                <li>Event</li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="item__name">Store</a>
+              <ul>
+                <li>매장 검색</li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="item__name">HOLLYS is</a>
+              <ul>
+                <li>HOLLYS</li>
+                <li>할리스 위치 및 연락처</li>
+                <li>채용 안내</li>
+                <li>가맹문의 및 절차</li>
+                <li>B2B 사업 소개</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div> -->
+      <div class="full_cover">
+        <nav class="menu_nav">
+          <div class="nav_bg"></div>
+          <ul class="first_depth">
+            <li class="first_depth_under">
+              <a href="#none">Menu</a>
+              <ul class="second_depth">
+                <li class="second_depth_under">COFFEE</li>
+                <li class="second_depth_under">라떼 · 초콜릿 · 티</li>
+                <li class="second_depth_under">할리치노 · 빙수</li>
+                <li class="second_depth_under">스무디 · 주스</li>
+                <li class="second_depth_under">스파클링</li>
+                <li class="second_depth_under">푸드</li>
+                <li class="second_depth_under">MD상품</li>
+                <li class="second_depth_under">MD식품</li>
+              </ul>
+            </li>
+      
+            <li class="first_depth_under">
+              <a href="#none">HOLLYS Mall</a>
+              <ul class="second_depth">
+                <li class="second_depth_under">할리스콘</li>
+                <li class="second_depth_under">할리스카드</li>
+                <li class="second_depth_under">E-Store</li>
+                <li class="second_depth_under">구매내역</li>
+              </ul>
+            </li>
+      
+            <li class="first_depth_under">
+              <a href="#none">Membership</a>
+              <ul class="second_depth">
+                <li class="second_depth_under">스마트오더</li>
+                <li class="second_depth_under">멤버십 혜택</li>
+              </ul>
+            </li>
+      
+            <li class="first_depth_under">
+              <a href="#none">HOLLYS News</a>
+              <ul class="second_depth">
+                <li class="second_depth_under">Notice</li>
+                <li class="second_depth_under">Event</li>
+              </ul>
+            </li>
+      
+            <li class="first_depth_under">
+              <a href="#none">Store</a>
+              <ul class="second_depth">
+                <li class="second_depth_under">매장검색</li>
+              </ul>
+            </li>
+      
+            <li class="first_depth_under">
+              <a href="#none">HOLLYSis</a>
+              <ul class="second_depth">
+                <li class="second_depth_under">HOLLYS</li>
+                <li class="second_depth_under">할리스 위치 및 연락처</li>
+                <li class="second_depth_under">채용 안내</li>
+                <li class="second_depth_under">가맹문의 및 절차</li>
+                <li class="second_depth_under">B2B 사업 소개</li>
+              </ul>
+            </li>
+      
+          </ul>
+        </nav>
+      </div>  
+    </header>
+</body>
   </html>
