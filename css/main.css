@@ -83,11 +83,13 @@ header .sub-menu ul.menu-left li a.black {
 header .cover{
   width: 100%;
   position: relative;
-  background-color: beige;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
 }
 
-header .cover .nav_bg{
-  background-color: beige;
+header .cover .item__contents{
+  background-color: #f89797;
   position: absolute;
   top: 100%;
   left: 0;
@@ -103,7 +105,7 @@ header > .cover .menu_nav:hover .item__contents {
 
 header .cover .menu_nav .main-menu {
   display: flex;
-  padding: 30px 0;
+  padding: 30px 0 0;
   width: 100%;
   justify-content: space-between;
 }
@@ -111,9 +113,10 @@ header .cover .menu_nav .main-menu {
 header .cover .menu_nav .main-menu .item{
   position: relative;
   text-align: center;
+  padding: 5px 45px;
 }
 
-header .cover .menu_nav .main-menu .inner{
+header .cover .menu_nav .main-menu .secon{
   position: absolute;
   top: 100%;
   left: 0%;
@@ -122,8 +125,34 @@ header .cover .menu_nav .main-menu .inner{
   transition: 1s;
   overflow: hidden;
   z-index: 5;
+  padding: 10px 0 0 0;
 }
 
-header .cover .menu_nav .main-menu:hover .inner{
+header .cover .menu_nav .main-menu:hover .secon{
   height: 255px;
+}
+
+/* 전역 배지(고정 배너) */
+header .badges {
+  position: fixed;
+  top: 132px;
+  right: 12px;
+}
+header .badges .badge {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px ;
+  /* x축거리, y축거리, 흐림 처리(blur) 범위, 확대/축소(spread) 범위, 색상 */
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* PROMOTION */
+.promotion {
+  height: 480px;
+  display: flex;
+  justify-content: center; /* 슬라이드 수평 가운데 정렬 */
+  position: relative; /*페이지네이션 요소 배치를 위해*/
+  overflow: hidden;
+  transition: height 0.4s;
 }

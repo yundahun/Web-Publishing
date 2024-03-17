@@ -16,8 +16,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
 
+  <!-- swiper.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
   <!-- main.css -->
   <link rel="stylesheet" href="./css/main.css">
+
+  <!-- SWIPER JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 </head>
 <body>
@@ -65,7 +71,7 @@
           <ul class="main-menu">
             <li class="item">
               <a href="#none">Menu</a>
-              <ul class="inner">
+              <ul class="inner secon">
                 <li class="item__name">COFFEE</li>
                 <li class="item__name">라떼 · 초콜릿 · 티</li>
                 <li class="item__name">할리치노 · 빙수</li>
@@ -79,7 +85,7 @@
       
             <li class="item">
               <a href="#none">HOLLYS Mall</a>
-              <ul class="inner">
+              <ul class="inner">  
                 <li class="item__name">할리스콘</li>
                 <li class="item__name">할리스카드</li>
                 <li class="item__name">E-Store</li>
@@ -124,6 +130,34 @@
         </nav>
       </div>  
     </div>
+    <!-- 고정 배너 만들기 -->
+    <div class="badges">
+      <div class="badge">
+        <img src="image/floating.png" alt="Badge">
+      </div>
+    </div>
   </header>
+
+  <!-- PROMOTION -->
+  <section class="promotion">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="image/mainBanner_202401250806229690.jpg" alt="">
+          <a href="javascript:void(0)" class="btn">자세히 보기</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="image/mainBanner_202403050705419200.jpg" alt="">
+          <a href="javascript:void(0)" class="btn">자세히 보기</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="image/mainBanner_202403050706439460.jpg" alt="">
+          <a href="javascript:void(0)" class="btn">자세히 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </section>
 </body>
-  </html>
+</html>
