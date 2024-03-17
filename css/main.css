@@ -116,7 +116,7 @@ header .cover .menu_nav .main-menu .item{
   padding: 5px 45px;
 }
 
-header .cover .menu_nav .main-menu .secon{
+header .cover .menu_nav .main-menu .secon {
   position: absolute;
   top: 100%;
   left: 0%;
@@ -128,7 +128,7 @@ header .cover .menu_nav .main-menu .secon{
   padding: 10px 0 0 0;
 }
 
-header .cover .menu_nav .main-menu:hover .secon{
+header .cover .menu_nav .main-menu:hover .secon {
   height: 255px;
 }
 
@@ -148,11 +148,23 @@ header .badges .badge {
 }
 
 /* PROMOTION */
-.promotion {
+.swiper {
   height: 480px;
-  display: flex;
   justify-content: center; /* 슬라이드 수평 가운데 정렬 */
-  position: relative; /*페이지네이션 요소 배치를 위해*/
-  overflow: hidden;
-  transition: height 0.4s;
+  margin-top: 150px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }
