@@ -30,7 +30,7 @@ header {
   top: 0;
 }
 header > .inner {
-  background-color: orange;
+  /* background-color: orange; */
   height: 148px;
 }
 
@@ -43,6 +43,7 @@ bottom: 0;
 left: 0;
 right: 0;
 margin: 0 auto;
+z-index: 3;
 }
 
 .sub-menu {
@@ -108,12 +109,18 @@ header .cover .menu_nav .main-menu {
   padding: 30px 0 0;
   width: 100%;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
-header .cover .menu_nav .main-menu .item{
+header .cover .menu_nav .main-menu .item {
   position: relative;
   text-align: center;
   padding: 5px 45px;
+}
+
+header .cover .menu_nav .main-menu .item a {
+font-size: 14px;
+font-weight: 700;
 }
 
 header .cover .menu_nav .main-menu .secon {
