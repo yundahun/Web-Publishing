@@ -113,7 +113,7 @@ header .cover .menu_nav .main-menu .item{
   text-align: center;
 }
 
-header .full_cover .menu_nav .main-menu .inner{
+header .cover .menu_nav .main-menu .inner{
   position: absolute;
   top: 100%;
   left: 0%;
@@ -124,6 +124,6 @@ header .full_cover .menu_nav .main-menu .inner{
   z-index: 5;
 }
 
-header .full_cover .menu_nav .main-menu:hover .inner{
+header .cover .menu_nav .main-menu:hover .inner{
   height: 255px;
 }
