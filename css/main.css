@@ -80,13 +80,13 @@ header .sub-menu ul.menu-left li a.black {
   color: black;
 }
 
-header .full_cover{
+header .cover{
   width: 100%;
   position: relative;
   background-color: beige;
 }
 
-header .full_cover .nav_bg{
+header .cover .nav_bg{
   background-color: beige;
   position: absolute;
   top: 100%;
