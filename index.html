@@ -14,7 +14,7 @@
   <!-- 구글 웹폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
 
   <!-- swiper.css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
@@ -26,8 +26,15 @@
   <!-- SWIPER JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <!-- main.js -->
-    <script defer src="js/main.js"></script>
+  <!-- GSAP -->
+  <!-- 순서 주의(main.js에서 사용하니까 더 앞에) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- youtube.js -->
+    <script defer src="js/youtube.js"></script>
+
+  <!-- main.js -->
+  <script defer src="js/main.js"></script>
 </head>
 <body>
   <!-- HEADER (이너 로고 서브메뉴 메인메뉴 전역배지 ) -->
@@ -67,7 +74,8 @@
           </li>
         </ul>
       </div>
-
+    </div>
+    
       <div class="cover"> <!--full_cover-->
         <nav class="menu_nav">
           <div class="item__contents"></div>
@@ -85,7 +93,7 @@
                 <li class="item__name">MD식품</li>
               </ul>
             </li>
-      
+            
             <li class="item">
               <a href="#none">HOLLYS Mall</a>
               <ul class="inner secon">  
@@ -95,7 +103,7 @@
                 <li class="item__name">구매내역</li>
               </ul>
             </li>
-      
+            
             <li class="item">
               <a href="#none">Membership</a>
               <ul class="inner secon">
@@ -103,7 +111,7 @@
                 <li class="item__name">멤버십 혜택</li>
               </ul>
             </li>
-      
+            
             <li class="item">
               <a href="#none">HOLLYS News</a>
               <ul class="inner secon">
@@ -111,16 +119,16 @@
                 <li class="item__name">Event</li>
               </ul>
             </li>
-      
+            
             <li class="item">
               <a href="#none">Store</a>
               <ul class="inner secon">
                 <li class="item__name">매장검색</li>
               </ul>
             </li>
-      
+            
             <li class="item">
-              <a href="#none">HOLLYSis</a>
+              <a href="#none">HOLLYS is</a>
               <ul class="inner secon">
                 <li class="item__name">HOLLYS</li>
                 <li class="item__name">할리스 위치 및 연락처</li>
@@ -132,28 +140,125 @@
           </ul>
         </nav>
       </div>  
-    </div>
-    <!-- 고정 배너 만들기 -->
-    <div class="badges">
-      <div class="badge">
-        <img src="image/floating.png" alt="Badge">
+      <!-- 고정 배너 만들기 -->
+      <div class="badges">
+        <div class="badge">
+          <img src="image/floating.png" alt="Badge">
+        </div>
       </div>
-    </div>
   </header>
 
   <!-- SWIPER -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="image/mainBanner_202401250806229690.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="image/mainBanner_202403050705419200.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="image/mainBanner_202403050706439460.jpg" />
+  <section class="promotion">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="image/mainBanner_202401250806229690.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="image/mainBanner_202403050705419200.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="image/mainBanner_202403050706439460.jpg" />
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- MAIN1 -->
+  <section class="main-design">
+    <div class="main_list">
+      <ul class="menu1">
+        <li>
+          <img src="./image/menu_tit.gif" alt="menu">
+          <a href="javascript:void(0)"><img src="./image/menu_img01.gif" alt="franchise"></a>
+        </li>
+      </ul>
+      <ul class="menu2">
+        <img src="image/mall_tit.gif" alt="hollys mall" class="hollys_mall">
+        <span>할리스의 다양한 상품들을 온라인에서도 만나보세요.</span>
+        <li>
+        <a href="javascript:void(0)">
+            <img src="./image/mallProdut_202403070732591090.png" alt="franchise">
+            <span>골든볼 용과 스무디</span>
+          </a>
+          <a href="javascript:void(0)">
+            <img src="./image/mallProdut_202403070732162830.png" alt="franchise">
+            <span>행운이 쑥쑥라떼</span>
+          </a>
+          <a href="javascript:void(0)">
+            <img src="./image/mallProdut_202403070731299330.png" alt="franchise">
+            <span>럭키 데이지 머스캣 티</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu3">
+        <li>
+          <img src="./image/store_tit.gif" alt="store">
+          <a href="javascript:void(0)"><img src="./image/store_main_pc.jpg" alt="franchise"></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- YOUTUBE -->
+  <section class="youtube inner">
+    <div class="youtube__area">
+      <div id="player"></div>
+    </div>
+
+    <div class="youtube__cover"></div>
+  </section>
+
+  <!-- MAIN2 -->
+  <section>
+    <div class="main-design2">
+      <ul class="main_list2">
+        <li>
+          <a href="javascript:void(0)">
+            <img src="image/img_banner_membership_210223.jpg" alt="membership">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <img src="image/img_2102223.jpg" alt="card">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SNS -->
+  <section class="sns">
+    <div class="menu-sns">
+      <img src="image/sns_tit.gif" alt="tit">
+      <a href="javascript:void(0)">
+        <img src="image/sns_facebook.gif" alt="fb">
+      </a>
+      <a href="javascript:void(0)">
+        <img src="image/sns_instagram.gif" alt="insta">
+      </a>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="inner">
+      <ul class="menu">
+        <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0)">서비스이용약관</a></li>
+        <li><a href="javascript:void(0)">멤버십이용약관</a></li>
+        <li><a href="javascript:void(0)">할리스카드이용약관</a></li>
+        <li><a href="javascript:void(0)">고객문의</a></li>
+        <li><a href="javascript:void(0)">고객설문</a></li>
+        <li><a href="javascript:void(0)">사이트맵</a></li>
+        <li><a href="javascript:void(0)">BI소개</a></li>
+      </ul>
+
+      <p>법인명: (주) 케이지할리스에프앤비 대표자: 이종현 사업자등록번호 211-87-61044 통신판매업: 제2019-서울종로-0193호</p>
+      <p>주소 : 서울특별시 중구 통일로 92, 9층(순화동, 케이지타워) 대표전화 : 02-2188-7100 (가맹문의 : 02-6350-7229)</p>
+      <p> COPYRIGHT &copy; KG HOLLYS F&B. All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

@@ -26,12 +26,13 @@ img {
 header {
   border-bottom: 2px solid #ba000c;
   width: 100%; /* 가로 너비를 지정하지 않으면 최소한으로 줄어드려고함 */
-  position: fixed;
+  position: relative;
   top: 0;
+  left: 0;
 }
 header > .inner {
   /* background-color: orange; */
-  height: 148px;
+  height: 110px;
 }
 
 header .logo {
@@ -70,8 +71,8 @@ header .sub-menu ul.menu-left li {
 }
 header .sub-menu ul.menu-left li a {
   display: block;
-  padding: 1px 1px;
-  font-size: 11px;
+  padding: 3px 3px;
+  font-size: 13px;
   font-weight: 700;
 }
 header .sub-menu ul.menu-left li a.red {
@@ -90,13 +91,13 @@ header .cover{
 }
 
 header .cover .item__contents{
-  background-color: #f89797;
+  background-color: #302e2e;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   height: 0;
-  transition: 1s;
+  transition: 0.5s;
   z-index: 3;
 }
 
@@ -106,21 +107,21 @@ header > .cover .menu_nav:hover .item__contents {
 
 header .cover .menu_nav .main-menu {
   display: flex;
-  padding: 30px 0 0;
   width: 100%;
-  justify-content: space-between;
-  margin-top: 20px;
+  position: relative;
+  z-index: 5;
 }
 
 header .cover .menu_nav .main-menu .item {
   position: relative;
   text-align: center;
-  padding: 5px 45px;
+  padding: 5px 30px;
 }
 
 header .cover .menu_nav .main-menu .item a {
-font-size: 14px;
-font-weight: 700;
+font-size: 20px;
+font-weight: 800;
+color: black;
 }
 
 header .cover .menu_nav .main-menu .secon {
@@ -129,7 +130,7 @@ header .cover .menu_nav .main-menu .secon {
   left: 0%;
   width: 100%;
   height: 0;
-  transition: 1s;
+  transition: 0.5s;
   overflow: hidden;
   z-index: 5;
   padding: 10px 0 0 0;
@@ -139,11 +140,19 @@ header .cover .menu_nav .main-menu:hover .secon {
   height: 255px;
 }
 
+header .cover .menu_nav .main-menu:hover .secon {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 2;
+}
+
 /* 전역 배지(고정 배너) */
 header .badges {
   position: fixed;
-  top: 132px;
-  right: 12px;
+  top: 20px;
+  left: 50%;
+  margin-left: 500px;
+  z-index: 5;
 }
 header .badges .badge {
   border-radius: 10px;
@@ -158,12 +167,12 @@ header .badges .badge {
 .swiper {
   height: 480px;
   justify-content: center; /* 슬라이드 수평 가운데 정렬 */
-  margin-top: 150px;
 }
 
 .swiper {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .swiper-slide {
@@ -174,4 +183,124 @@ header .badges .badge {
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+.promotion .swiper-pagination {
+  position: absolute;
+  bottom: 40px;
+  z-index: 1;
+}
+
+/* MAIN DESIGN */
+.main-design {
+  width: 940px;
+  height: 300px;
+  /* background-color: cornflowerblue; */
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.main-design .main_list {
+  display: flex;
+}
+.main-design .main_list ul img {
+  padding: 10px;
+}
+
+.main-design .main_list .menu2 {
+  width: 460px;
+}
+
+.main-design .main_list .menu2 .hollys_mall {
+padding-bottom: 10px;
+}
+
+.main-design .main_list .menu2:nth-child(2) li a {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.main-design .main_list .menu2:nth-child(2) li {
+  display: flex;
+  padding: 60px 0 0 0;
+}
+
+.main-design .main_list .menu2:nth-child(2) li a img {
+  width: 85px;
+  height: 75px;
+}
+.main-design .main_list .menu2:nth-child(2) li a {
+  color: black;
+  font-weight: 400;
+  border-right: 1px dotted gray;
+}
+.main-design .main_list .menu2:nth-child(2) li a:last-child {
+  border-right: none;
+}
+
+/* youtube */
+.youtube {
+  position: relative; /* 부모에 위치 기준 */
+  height: 500px;
+  background-color: #333;
+  overflow: hidden; /* 영상 출력 넘치는 부분 숨기기 */
+
+}
+.youtube .youtube__area {
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  margin-left: calc(1920px / -2);
+  margin-top: calc(1080px / -2);
+
+  --width: 1920px;
+  --height: 1080px;
+  width: var(--width);
+  height: var(--height);
+  margin-left: calc(var(--width) / -2);
+  margin-top: calc(var(--height) / -2);
+}
+#player {
+  width: 100%;
+  height: 100%;
+}
+
+/* MAIN DESIGN 2 */
+.main-design2 {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.main-design2 .main_list2 {
+  display: flex;
+  margin: 30px 0;
+}
+
+.main-design2 .main_list2 li {
+  padding-right: 10px;
+}
+
+/* SNS */
+.sns {
+  width: 940px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.sns .menu-sns {
+  display: flex;
+  border-top: 2px solid #ba000c;
+  padding-top: 40px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #ba000c;
+}
+footer .inner .menu {
+  display: flex;
+  padding: 20px 0;
 }
