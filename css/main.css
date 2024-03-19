@@ -241,12 +241,11 @@ header .badges .badge {
 .main-design .main_list {
   display: flex;
 }
+.main-design .main_list .ul {
+  display: block;
+}
 .main-design .main_list ul img {
   padding: 10px;
-}
-
-.main-design .main_list .menu2 {
-  width: 460px;
 }
 
 .main-design .main_list .menu2 .hollys_mall {
@@ -372,3 +371,31 @@ footer .footer-menu {
 footer p {
   color: #de898e;
 }
+@media screen and (max-width:1024px) {
+  .inner {
+    background-color: lightgreen;
+    max-width: 940px;
+  }
+  
+  header .cover .menu_nav .main-menu .item a {
+    font-size: 14px;
+  }
+
+  .main-design .main_list {
+    max-width: 940px;
+  }
+}
+@media screen and (max-width:767px) {
+  .inner {
+    background-color: coral;
+    max-width: 767px;
+  }
+
+  header .cover .menu_nav .main-menu .item a {
+    font-size: 10px;
+  }
+
+  header .cover .menu_nav .main-menu .item {
+    padding: 5px 30px;
+  }
+} 
