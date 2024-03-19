@@ -302,5 +302,31 @@ footer {
 }
 footer .inner .menu {
   display: flex;
-  padding: 20px 0;
+  padding: 30px 0;
+}
+footer .inner .menu a {
+  color: #faeff0;
+  padding: 10px;
+}
+
+footer .inner .menu li::before {
+  content: ""; /* 필수 속성 */
+  display: block;
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  margin: 5px auto;
+}
+
+footer .inner .menu li:first-child a {
+  padding-left: 0;
+}
+
+footer .inner .menu li:first-child::before {
+  display: none;
+}
+
+footer p {
+  color: #de898e;
 }
