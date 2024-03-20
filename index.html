@@ -16,6 +16,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
 
+  <!-- icon -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
   <!-- swiper.css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
@@ -46,13 +49,18 @@
         <img src="image/logo_210302.gif" alt="logo">
       </a>
 
-      <!-- 서브 메뉴 (헤더 오른쪽 상단) -->
-      <div class="sub-menu">
-        <!-- 메뉴 아이템 -->
-        <ul class="menu-left">
-          <li>
-            <img src="image/창업설명회.png" alt="창업설명회">
-            <a href="javascript:void(0)" class="red">창업설명회</a>
+    <!-- 모바일 -->
+    <a href="#" class="btn-hamburger">
+      <span class="material-icons">menu</span>
+    </a>    
+
+    <!-- 서브 메뉴 (헤더 오른쪽 상단) -->
+    <div class="sub-menu">
+      <!-- 메뉴 아이템 -->
+      <ul class="menu-left">
+        <li>
+          <img src="image/창업설명회.png" alt="창업설명회">
+          <a href="javascript:void(0)" class="red">창업설명회</a>
           </li>
           <li>
             <img src="image/기업특판.png" alt="기업특판">
@@ -147,6 +155,32 @@
           <img src="image/floating.png" alt="Badge">
         </div>
       </div>
+
+      <!-- 모바일용 -->
+      <nav class="m-nav">
+        <div>
+          <a href="#" class="btn-close">
+            <span class="material-icons">close</span>
+          </a>
+        </div>
+        <ul>
+          <li><a href="#">멤버십 로그인</a></li>
+          <li><a href="#">멤버십 회원가입</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">HOLLYS Mall</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">HOLLYS News</a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">HOLLYS is</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">창업설명회</a></li>
+          <li><a href="#">기업특판</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </nav>
   </header>
 
   <!-- SWIPER -->
@@ -166,21 +200,124 @@
     </div>
   </section>
 
+    <!-- 대표메뉴  -->
+    <section class="main-coffee inner">
+      <h1>Menu</h1> 
+      <div class="d-coffee">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"> 
+              <img src="image/아메리카노.png" alt="americano">
+            </div>
+            <div class="swiper-slide">
+              <img src="image/바닐라 딜라이트.png" alt="banana">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/콜드브루 딜라이트.png" alt="coldbrew">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/피치 딸기 크러쉬.png" alt="peachberry">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/애플망고스무디.png" alt="applemango">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/딸치케.png" alt="berry">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/민초할리치노.png" alt="mint">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/말차 할리치노.png" alt="malcha">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/다초.png" alt="darkchoco">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/복자.png" alt="peach">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/청포도스파클링.png" alt="grape">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/아포카토.png" alt="coffee">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-prev">
+        <span class="material-icons">arrow_back</span>
+      </div>
+      <div class="swiper-button-next">
+        <span class="material-icons">arrow_forward</span>
+      </div>
+    </section>
+
+    <!-- 대표메뉴 모바일용 -->
+    <section class="m-main-coffee inner">
+      <h1>Menu</h1> 
+      <div class="m-coffee">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"> 
+              <img src="image/아메리카노.png" alt="americano">
+            </div>
+            <div class="swiper-slide">
+              <img src="image/바닐라 딜라이트.png" alt="banana">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/콜드브루 딜라이트.png" alt="coldbrew">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/피치 딸기 크러쉬.png" alt="peachberry">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/애플망고스무디.png" alt="applemango">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/딸치케.png" alt="berry">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/민초할리치노.png" alt="mint">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/말차 할리치노.png" alt="malcha">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/다초.png" alt="darkchoco">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/복자.png" alt="peach">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/청포도스파클링.png" alt="grape">
+            </div>
+              <div class="swiper-slide">
+              <img src="image/아포카토.png" alt="coffee">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   <!-- MAIN1 -->
   <section class="main-design">
     <div class="main_list">
       <ul class="menu1">
         <li>
-          <img src="./image/menu_tit.gif" alt="menu">
-          <a href="javascript:void(0)"><img src="./image/menu_img01.gif" alt="franchise"></a>
+          <img src="./image/menu_tit.gif" alt="menu" class="franchise">
+          <a href="javascript:void(0)">
+            <img src="./image/menu_img01.gif" alt="franchise">
+          </a>
         </li>
       </ul>
       <ul class="menu2">
-        <img src="image/mall_tit.gif" alt="hollys mall" class="hollys_mall">
+        <img src="image/mall_tit.gif" alt="hollys mall" class="hollys_mall" class="mall">
         <span>할리스의 다양한 상품들을 온라인에서도 만나보세요.</span>
         <li>
         <a href="javascript:void(0)">
-            <img src="./image/mallProdut_202403070732591090.png" alt="franchise">
+            <img src="./image/mallProdut_202403070732591090.png" alt="drink">
             <span>골든볼 용과 스무디</span>
           </a>
           <a href="javascript:void(0)">
@@ -195,8 +332,8 @@
       </ul>
       <ul class="menu3">
         <li>
-          <img src="./image/store_tit.gif" alt="store">
-          <a href="javascript:void(0)"><img src="./image/store_main_pc.jpg" alt="franchise"></a>
+          <img src="./image/store_tit.gif" alt="store" class="store">
+          <a href="javascript:void(0)"><img src="./image/store_main_pc.jpg" alt="store"></a>
         </li>
       </ul>
     </div>

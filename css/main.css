@@ -66,6 +66,21 @@ header .sub-menu ul.menu-right li a {
   font-size: 11px;
   color: #6f6f6f;
 }
+
+  /* 모바일 */
+.material-icons {
+    font-size: inherit;
+  }
+
+header .btn-hamburger {
+  font-size: 40px;
+  position: absolute;
+  right: 32px;
+  display: none;
+  color: #ba000c;
+  top: 25px;
+}
+
 header .sub-menu ul.menu-left li {
   display: flex;
 }
@@ -214,17 +229,62 @@ header .badges .badge {
   cursor: pointer;
 }
 
+/* 모바일용 */
+.m-nav {
+  width: 20%;
+  height: 100vh;
+  background-color: #ba000c;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  /* 방법1 */
+  right: -60%;
+  /* 방법2: translateX()를 써도 구현 가능 */
+  transition: 0.5s;
+  z-index: 9;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 700;
+}
+header .m-nav ul:nth-child(3) {
+  padding-top: 50px;
+}
+header .m-nav ul:last-child {
+  padding-top: 50px;
+}
+.m-nav ul li{
+  padding-bottom: 15px;
+}
+.m-nav ul a {
+  color: #ffffff;
+}
+.m-nav.active {
+  right: 0;
+}
+.m-nav div {
+  padding: 20px 0;
+}
+.m-nav .btn-close {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+/* mobile coffee */
+.m-main-coffee .m-coffee {
+  display:none
+}
+
 /* PROMOTION */
 .promotion {
   display: flex;
 }
 
-.swiper-slide {
+.promotion .swiper-slide {
   background-position: center;
   background-size: cover;
 }
 
-.swiper-slide img {
+.promotion .swiper-slide img {
   max-width: 100%;
   margin: 0 auto;
 }
@@ -274,6 +334,60 @@ padding-bottom: 10px;
 .main-design .main_list .menu2:nth-child(2) li a:last-child {
   border-right: none;
 }
+
+/* 메인메뉴 */
+.main-coffee h1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: #302e2e;
+  padding: 30px 0;
+}
+.main-coffee {
+  /* justify-content: center;
+  align-items: center;
+  overflow: hidden; */
+}
+.main-coffee .swiper-slide {
+  display: flex;
+}
+
+.main-coffee .d-coffee img {
+width: 200px;
+height: 200px;
+}
+
+/* button */
+.main-coffee .swiper-button-prev,
+.main-coffee .swiper-button-next {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 175px;
+  z-index: 1;
+  color: #333;
+}
+.main-coffee .swiper-button-prev {
+/* 가운데로 몰어넣고 마진으로 위치 조정 */
+left: 50%;
+margin-left: -550px;
+}
+.main-coffee .swiper-button-next {
+  /* 가운데로 몰어넣고 마진으로 위치 조정 */
+right: 50%;
+margin-right: -550px;
+}
+.main-coffee .swiper-button-prev:hover,
+.main-coffee .swiper-button-next:hover {
+  background-color: #333;
+  color: #fff;
+}
+.main-coffee .swiper-button-prev::after,
+.main-coffee .swiper-button-next::after {
+  display: none;
+}
+
 
 /* youtube */
 .youtube {
@@ -371,31 +485,88 @@ footer .footer-menu {
 footer p {
   color: #de898e;
 }
-@media screen and (max-width:1024px) {
-  .inner {
-    background-color: lightgreen;
-    max-width: 940px;
-  }
-  
-  header .cover .menu_nav .main-menu .item a {
-    font-size: 14px;
-  }
 
-  .main-design .main_list {
-    max-width: 940px;
+@media screen and (max-width:1023px) {
+  header .badges {
+    display: none;
   }
+  .main-coffee .swiper-button-prev {
+    /* 가운데로 몰어넣고 마진으로 위치 조정 */
+    left: 50%;
+    margin-left: -500px;
+    }
+    .main-coffee .swiper-button-next {
+      /* 가운데로 몰어넣고 마진으로 위치 조정 */
+    right: 50%;
+    margin-right: -500px;
+    }
 }
+
 @media screen and (max-width:767px) {
   .inner {
-    background-color: coral;
+    /* background-color: coral; */
     max-width: 767px;
   }
 
-  header .cover .menu_nav .main-menu .item a {
-    font-size: 10px;
+  header {
+    width: 100%;
   }
 
-  header .cover .menu_nav .main-menu .item {
-    padding: 5px 30px;
+  header .btn-hamburger {
+    display: block;
   }
-} 
+
+  .sub-menu {
+    display: none;
+  }
+  header .cover {
+    display: none;
+  }
+  header .badges {
+    display: none;
+  }
+
+  /* COFFEE */
+  .m-main-coffee {
+    display: block;
+  }
+  .main-design {
+    display: none;
+  }
+  .main-design2 {
+    display: none;
+  }
+  .sns {
+    max-width: 767px;
+  }
+  .youtube {
+    height: 350px;
+    border-top: 3px solid #ba000c;
+    background-color: #ffffff;
+  }
+  .youtube .youtube__area {
+    left: 100%;
+    top: 150%;
+  }
+  #player {
+    width: 60%;
+    height: 40%;
+  }
+  .menu-sns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  header .m-nav {
+    display: none;
+  }
+}
